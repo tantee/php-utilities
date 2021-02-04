@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "tantee/php-utilities",
+    "description": "Collection of utilities",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "tantee",
+        "php-utilities"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/tantee/php-utilities",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "TaNteE",
+            "email": "poompis@yahoo.com",
             "role": "Developer"
         }
     ],
@@ -27,13 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "TaNteE\\PhpUtilities\\": "src",
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "TaNteE\\PhpUtilities\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "TaNteE\\PhpUtilities\\PhpUtilitiesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "PhpUtilities": "TaNteE\\PhpUtilities\\PhpUtilitiesFacade"
             }
         }
     },
