@@ -1,7 +1,6 @@
 # Collection of utilities
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tantee/php-utilities.svg?style=flat-square)](https://packagist.org/packages/tantee/php-utilities)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/tantee/php-utilities/run-tests?label=tests)](https://github.com/tantee/php-utilities/actions?query=workflow%3ATests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/tantee/php-utilities.svg?style=flat-square)](https://packagist.org/packages/tantee/php-utilities)
 
 ## Installation

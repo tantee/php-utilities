@@ -41,7 +41,7 @@ class ArrayType
         }
         foreach ($includeField as $field) {
             if (! in_array($field, $excludeField)) {
-                $isEmpty = $isEmpty & empty($array[$field]);
+                $isEmpty = $isEmpty && empty($array[$field]);
             }
         }
 

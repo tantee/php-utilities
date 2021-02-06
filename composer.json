@@ -15,14 +15,9 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "spatie/laravel-package-tools": "^1.1",
-        "illuminate/contracts": "^8.0"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.3",
-        "spatie/laravel-ray": "^1.9",
         "vimeo/psalm": "^4.4"
     },
     "autoload": {
@@ -30,28 +25,11 @@
             "TaNteE\\PhpUtilities\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "TaNteE\\PhpUtilities\\Tests\\": "tests"
-        }
-    },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
-        "test": "vendor/bin/phpunit --colors=always",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "psalm": "vendor/bin/psalm"
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "TaNteE\\PhpUtilities\\PhpUtilitiesServiceProvider"
-            ],
-            "aliases": {
-                "PhpUtilities": "TaNteE\\PhpUtilities\\PhpUtilitiesFacade"
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
