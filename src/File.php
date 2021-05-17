@@ -9,7 +9,6 @@ class File
 {
     public static function guessExtension(String $mimeType)
     {
-        $guesser = ExtensionGuesser::getInstance();
         $mimeTypes = new MimeTypes();
         $exts = $mimeTypes->getExtensions($mimeType);
 
