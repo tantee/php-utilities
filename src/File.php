@@ -13,7 +13,7 @@ class File
         $mimeTypes = new MimeTypes();
         $exts = $mimeTypes->getExtensions($mimeType);
 
-        return (count($exts)>=) ? $exts[0] : null;
+        return (count($exts)>0) ? $exts[0] : null;
     }
 
     public static function base64ToFileContent(String $base64string)
