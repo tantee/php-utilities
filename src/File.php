@@ -3,15 +3,17 @@
 namespace TaNteE\PhpUtilities;
 
 use Illuminate\Support\Facades\Storage;
-use Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser;
+use Symfony\Component\Mime\MimeTypes;
 
 class File
 {
     public static function guessExtension(String $mimeType)
     {
         $guesser = ExtensionGuesser::getInstance();
+        $mimeTypes = new MimeTypes();
+        $exts = $mimeTypes->getExtensions($mimeType);
 
-        return $guesser->guess($mimeType);
+        return (count($exts)>=) ? $exts[0] : null;
     }
 
     public static function base64ToFileContent(String $base64string)
